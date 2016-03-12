@@ -56,6 +56,17 @@ section p {
 	font-size: 1.3em;
 	line-height: 1.5;
 }
+section .active-component{
+    position: fixed;
+    top: 0px;
+    text-align: center;
+    width: 100%;
+    left: 0px;
+    margin: 0px;
+    padding: 0.5em;
+    z-index: 100;
+}
+
 
 .text:first-child {
 	text-align: right;
