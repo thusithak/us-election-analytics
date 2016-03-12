@@ -34,7 +34,7 @@ section.related{
 	background:#555;
 }
 
-.section1{ background: #68C3A3; }
+.section1{ background: #1BA39C; }
 .section2{ background: #F39C12; }
 .section3{ background: #674172; }
 
@@ -52,7 +52,7 @@ section .space{
 	margin-bottom:10em;
 }
 section p {
-	color: rgba(0,0,0,.3);
+	color: rgba(255,255,255,.5);
 	font-size: 1.3em;
 	line-height: 1.5;
 }
@@ -85,10 +85,15 @@ section p {
 .column {
 	display: inline-block;
 	vertical-align: top;
-	border: 1px solid rgba(0, 0, 0, 0.3);
-	height:30em;
+	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
 }
-
+h4{
+	font-weight:normal;
+	text-align:left;
+}
+.clearfix{
+	clear:both;
+}
 .icon {
 	display: block;
 	width: 2em;
@@ -199,8 +204,8 @@ svg#bigTriangleColor {
 }
 
 #bigTriangleColor path {
-	fill: #68C3A3;
-	stroke: #68C3A3;
+	fill: #1BA39C;
+	stroke: #1BA39C;
 	stroke-width: 2;
 }
 
