@@ -68,5 +68,28 @@
 				<p><a href="#daslink">WSO2 DAS</a></p>
 			</section>
 		</div><!-- /container -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+		<script src="js/jquery.waypoints.min.js"></script>
+		<script>
+		  	var waypoints = $('.main-h2').waypoint({
+				handler: function(direction) {
+			    	var prev = this.previous();
+			      	var next = this.previous();
+			      	var current = $(this.element);
+
+			      	if('down' == direction){
+			      		$('.active-component').remove();
+			      		current.clone().css('background-color',current.parent().css('background-color')).addClass('active-component').appendTo($(this.element).parent());
+			      	}else if('up' == direction && prev != null){
+			      		$('.active-component').remove();
+			      		$(prev.element).clone().css('background-color',$(prev.element).parent().css('background-color')).addClass('active-component').appendTo($(prev.element).parent())
+			      	}else if( prev == null){
+			      		$('.active-component').remove();
+			      	}
+
+			      	
+			  	}
+		  	})
+		</script>
 	</body>
 </html>
