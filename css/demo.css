@@ -425,16 +425,25 @@ h3{
     display: inline-block;
 
 }
-.wordcloud-left{
-    border:1px solid #eee;
-}
+
 .wordcloud-left .avatar{
     margin:0;
     margin-right:2%;
     float:left;
-    height: calc()
+    margin-top:10%;
+}
+.wordcloud-right .avatar{
+    margin:0;
+    margin-left:2%;
+    float:right;
+    margin-top:10%;
 }
 #wc-container1{
+    float:left;
+    width: 85%;
+    height:200px;
+}
+#wc-container2{
     float:left;
     width: 85%;
     height:200px;
