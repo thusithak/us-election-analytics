@@ -262,12 +262,14 @@ h3{
     display: inline-block;
     margin-bottom: .2em;
     color: #292f33;
+    margin-top:0em;
 }
 .twitter-id{
     display: inline-block;
     margin-bottom: .2em;
     color: #8899a6;
     margin-left: 0.4em;
+    margin-top:0em;
 }
 
 .twitter-id2{
@@ -293,7 +295,7 @@ h3{
 .retweet,.retweet2 {
     position: absolute;
     opacity: 1;
-    top: 0.6em;
+    top: -0.2em;
     right: 5em;
     display: block;
     padding: 4px;
@@ -389,6 +391,9 @@ h3{
 
 #nt-latest li:first-child ,#nt-popular li:first-child,#nt-news li:first-child,#nt-popularElection li:first-child,#nt-popularLink li:first-child{
     border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+#nt-latest li:last-child ,#nt-popular li:last-child,#nt-news li:last-child,#nt-popularElection li:last-child,#nt-popularLink li:last-child{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 #nt-latest li a,#nt-popular li a,#nt-news li a,#nt-popularElection li a,#nt-popularLink li a{
     color: #4aa3df;
