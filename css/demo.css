@@ -85,7 +85,7 @@ a {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
-    border: 5px solid #ecf0f1;
+    border: 1px solid #ecf0f1;
     position: relative;
     }
 
@@ -282,7 +282,7 @@ h3{
     color: #0084B4;
 }
 .twitter-text{
-    color: #4D4D4D;
+    color: #F3F3F3;
 }
 .retweet-user{
     margin: 0px 0px 5px 0px;
@@ -304,11 +304,17 @@ h3{
     right: .5em;
 }
 .retweet .icon-heart,.retweet2 .icon-retweet {
-    color: #3498db;
+    color: #83CDFF;
     margin: auto;
     width: 100%;
     display: block;
     font-size: 1em;
+}
+.retweet .icon-heart{
+    color:#FF5722;
+}
+.retweet2 .icon-retweet{
+    color:#4CAF50;
 }
 .retweet .icon-heart span,.retweet2 .icon-retweet span{
     font-size: 1em;
@@ -350,11 +356,11 @@ h3{
 }
 #nt-latest li,#nt-popular li,#nt-news li,#nt-popularElection li{
     overflow: hidden;
-    padding: 8px;
+    padding: 16px 8px;
     list-style: none;
     font-size: 14px;
     text-align: left;
-    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
     -webkit-transition-property: background,color;
     -moz-transition-property: background,color;
     -o-transition-property: background,color;
@@ -370,11 +376,11 @@ h3{
 }
 #nt-popularLink li{
     overflow: hidden;
-    padding: 8px;
+    padding: 16px 8px;
     list-style: none;
     font-size: 14px;
     text-align: left;
-    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
     -webkit-transition-property: background,color;
     -moz-transition-property: background,color;
     -o-transition-property: background,color;
@@ -390,13 +396,13 @@ h3{
 }
 
 #nt-latest li:first-child ,#nt-popular li:first-child,#nt-news li:first-child,#nt-popularElection li:first-child,#nt-popularLink li:first-child{
-    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 #nt-latest li:last-child ,#nt-popular li:last-child,#nt-news li:last-child,#nt-popularElection li:last-child,#nt-popularLink li:last-child{
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 #nt-latest li a,#nt-popular li a,#nt-news li a,#nt-popularElection li a,#nt-popularLink li a{
-    color: #4aa3df;
+    color: #83CDFF;
 }
 .bubble-container {
     width: 85%;
