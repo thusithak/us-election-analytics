@@ -410,17 +410,32 @@ h3{
     position: relative;
     padding-left: 20px;
     vertical-align: top;
-    display: inline-block; }
+    display: inline-block;
+}
 
 .bubble2:hover > .over-bubble2 {
     opacity: 1; }
 
 .bubble-container2 {
-     width: 85%;
+    width: 85%;
     display: block;
     position: relative;
     padding-left: 20px;
     vertical-align: top;
     display: inline-block;
 
+}
+.wordcloud-left{
+    border:1px solid #eee;
+}
+.wordcloud-left .avatar{
+    margin:0;
+    margin-right:2%;
+    float:left;
+    height: calc()
+}
+#wc-container1{
+    float:left;
+    width: 85%;
+    height:200px;
 }
