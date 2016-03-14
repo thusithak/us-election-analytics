@@ -356,6 +356,7 @@ h3{
 }
 #nt-latest li,#nt-popular li,#nt-news li,#nt-popularElection li{
     overflow: hidden;
+    height:100px;
     padding: 16px 8px;
     list-style: none;
     font-size: 14px;
