@@ -1,279 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>WSO2 Analytics Demo</title>
-		<meta name="description" content="description" />
-		<meta name="keywords" content="wso2, analytics, cep, das, election" />
-		<meta name="author" content="wso2" />
-		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/icons.css" />
-		<!--<link rel="stylesheet" type="text/css" href="fonts/font-wso2_1.2/css/font-wso2.css"/>-->
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-	</head>
-	<body>
-		<div class="container">
-			<header>
-				<h1>US Elections 2016 <span>Analytics</span></h1>
-			</header>
-			<section class="col-3 ss-style-triangles">
-				<h2 class="main-h2">Twitter Data</h2>
-				<p>Galaxies a still more rings of Uranus the carbon in our apple pies rings of Uranus a very small stage in a vast cosmic arena brain is the seed of intelligence preserve and cherish that pale blue dot muse about, globular star cluster ship of the imagination shores of the cosmic ocean, as a patch of light? Ship of the imagination</p>
-				<div class="column">
-					<div id="feed1">
-						<h4>News Column 1</h4>
-						<ul class="timeline" id="nt-latest">
-							<li>
-								<div class="avatar">
-									<img class="preserve" onerror="errorImage(this)" src="https://twitter.com/Right2Refuse/profile_image?size=original">
-								</div>
-								<div class="bubble-container">
-									<div class="bubble">
-										<h4 class="twitter-name"><a href="#">Right2Refuse</a></h4>
-										<h5 class="twitter-id">@Right2Refuse</h5>
-										<br>
-										<div class="twitter-text">#HillaryClinton Spars w/Benghazi Victim’s Families During Latest #DemDebate...</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="avatar"><img class="preserve" onerror="errorImage(this)" src="https://twitter.com/CAW622/profile_image?size=original">
-								</div>
-								<div class="bubble-container">
-									<div class="bubble">
-										<h4 class="twitter-name"><a href="#">Cheryl</a></h4>
-										<h5 class="twitter-id">@CAW622</h5>
-										<br>
-										<div class="twitter-text">Our country's youth is being hijacked by evil.  We must stop this insanity and vote #Trump2016</div>
-									</div>
 
-								</div>
-							</li>
-							<li>
-								<div class="avatar"><img class="preserve" onerror="errorImage(this)" src="https://twitter.com/CAW622/profile_image?size=original">
-								</div>
-								<div class="bubble-container">
-									<div class="bubble">
-										<h4 class="twitter-name"><a href="#">Cheryl</a></h4>
-										<h5 class="twitter-id">@CAW622</h5>
-										<br>
-										<div class="twitter-text">Our country's youth is being hijacked by evil.  We must stop this insanity and vote #Trump2016</div>
-									</div>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <link href="http://cdn.wso2.com/wso2/sites/all/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <script src="http://cdn.wso2.com/wso2/sites/all/bootstrap/js/jquery.js"></script>
+    <script src="http://cdn.wso2.com/wso2/sites/all/bootstrap/js/bootstrap.js"></script>
+   <link href='https://fonts.googleapis.com/css?family=Cinzel:400,700|Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <script src="http://cdn.wso2.com/wso2/sites/all/bootstrap/menu/jquery.bootstrap-dropdown-hover.js"></script>
+    <link href="http://c.content.wso2.com/sites/all/common/wso2-common-styles.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/twitter.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/election-style.css" rel="stylesheet" type="text/css" media="all" />
+        
+    </head>
+    <body class="cElection">
+        <div class="row cElectionIntro">
+            <div class="container">
+                <div class="col-sm-12 col-md-6 cElectionIntroLeft">
+                    <h1>WSO2<br/>ELECTION<br/>MONITOR</h1>
+                </div>
+                <div class="col-sm-12 col-md-6 cElectionIntroRight">
+                    <p>Every day, thousands of tweets and dozens of news articles about the US Election hit the Internet.</p>
+                    <p class="cRed">Will Clinton win? </p>
+                    <p class="cBlue">Will Trump?</p>
+                    <p>We can’t say for sure, but this is what the Internet is saying. </p>
+                </div>
+                <div class="col-sm-12 col-md-12 cElectionIntroBottom">
+                    <h2>At vero eos et accusamus et  iusto odio dignissimos</h2>
+                    <div class="col-sm-12 col-md-6 cPartyContainer cRepublican">
+                        <h3>Republican</h3>
+                        <div class="col-sm-12 col-md-6 cCandidate cSecondCandidate">
+                            <img src="images/trump.jpg"/>
+                            <p class="cCandidateName">TRUMP</p>
+                            <p class="cCandidateNumbers">55%</p>
+                        </div>
+                        <div class="col-sm-12 col-md-6 cCandidate cFirstCandidate">
+                             <img src="images/trump.jpg"/>
+                            <p class="cCandidateName">TRUMP</p>
+                            <p class="cCandidateNumbers">55%</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 cPartyContainer cDemocratic">
+                         <h3>Democratic</h3>
+                           <div class="col-sm-12 col-md-6 cCandidate cFirstCandidate">
+                             <img src="images/trump.jpg"/>
+                            <p class="cCandidateName">TRUMP</p>
+                            <p class="cCandidateNumbers">55%</p>
+                        </div>
+                        <div class="col-sm-12 col-md-6 cCandidate cSecondCandidate">
+                            <img src="images/trump.jpg"/>
+                            <p class="cCandidateName">TRUMP</p>
+                            <p class="cCandidateNumbers">55%</p>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row cWhiteSection">
+            <div class="container">
+                <h2>Twitter Stream Analytics</h2>
+                <p>We use both general election hashtags and those that are popular for the candidates currently in the rates. For order tweets by their popularity below 
+                    ( except live view) a variant of the HackerNews algorithm, which considers interactions ( retweets etc)and age of the tweet. 
+                </p>
+                <div class="cTwitterContainer">
+                <div class="col-sm-12 col-md-4">
+                    <div class="cTitle cLive">Live </div>
+                    <div class="cTwitterWidgetContainer">
+                        <ol class="timeline-TweetList">
+                            <li class="timeline-TweetList-tweet customisable-border">
+                                <div class="timeline-Tweet">
+                                    <div class="timeline-Tweet-brand u-floatRight">
+                                        <div class="Icon Icon--twitter"></div>
+                                    </div>
+                                    <div class="timeline-Tweet-author">
+                                        <div class="TweetAuthor">
+                                            <a class="TweetAuthor-link Identity u-linkBlend" href="https://twitter.com/DenaliNPS">
+                                                <span class="TweetAuthor-avatar Identity-avatar">
+                                                  <img class="Avatar" alt="" src="https://pbs.twimg.com/profile_images/625002681900208129/vjrhX5Rt_bigger.png">
+                                                </span>
+                                                <span class="TweetAuthor-name Identity-name customisable-highlight" title="Denali National Park" data-scribe="element:name">Denali National Park</span>
+                                                <span class="TweetAuthor-verifiedBadge" data-scribe="element:verified_badge"><div class="Icon Icon--verified " aria-label="Verified Account" title="Verified Account" role="img"></div><b class="u-hiddenVisually">✔</b></span>
+                                                <span class="TweetAuthor-screenName Identity-screenName" title="&lrm;@DenaliNPS" data-scribe="element:screen_name">&lrm;@DenaliNPS</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p class="timeline-Tweet-text" lang="en" dir="ltr">Denali recognizes Native Alaskan Abbie Joseph during women's history month: <a href="https://t.co/VYh5JVNcHv" rel="nofollow" dir="ltr" data-expanded-url="http://www.nps.gov/articles/akwomen-abbie-joseph.htm" class="link customisable" target="_blank" title="http://www.nps.gov/articles/akwomen-abbie-joseph.htm" data-scribe="element:url"><span class="u-hiddenVisually">http://www.</span>nps.gov/articles/akwom<span class="u-hiddenVisually">en-abbie-joseph.htm&nbsp;</span>…</a> <a href="https://twitter.com/hashtag/findyourpark?src=hash" data-query-source="hashtag_click" class="PrettyLink hashtag customisable" dir="ltr" rel="tag" data-scribe="element:hashtag"><span class="PrettyLink-prefix">#</span><span class="PrettyLink-value">findyourpark</span></a> <a href="https://twitter.com/hashtag/denalihistory?src=hash" data-query-source="hashtag_click" class="PrettyLink hashtag customisable" dir="ltr" rel="tag" data-scribe="element:hashtag"><span class="PrettyLink-prefix">#</span><span class="PrettyLink-value">denalihistory</span></a>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="timeline-TweetList-tweet customisable-border">
+                                <div class="timeline-Tweet">
+                                    <div class="timeline-Tweet-brand u-floatRight">
+                                        <div class="Icon Icon--twitter"></div>
+                                    </div>
+                                    <div class="timeline-Tweet-author">
+                                        <div class="TweetAuthor">
+                                            <a class="TweetAuthor-link Identity u-linkBlend" href="https://twitter.com/DenaliNPS">
+                                                <span class="TweetAuthor-avatar Identity-avatar">
+                                                  <img class="Avatar" alt="" src="https://pbs.twimg.com/profile_images/625002681900208129/vjrhX5Rt_bigger.png">
+                                                </span>
+                                                <span class="TweetAuthor-name Identity-name customisable-highlight" title="Denali National Park" data-scribe="element:name">Denali National Park</span>
+                                                <span class="TweetAuthor-verifiedBadge" data-scribe="element:verified_badge"><div class="Icon Icon--verified " aria-label="Verified Account" title="Verified Account" role="img"></div><b class="u-hiddenVisually">✔</b></span>
+                                                <span class="TweetAuthor-screenName Identity-screenName" title="&lrm;@DenaliNPS" data-scribe="element:screen_name">&lrm;@DenaliNPS</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p class="timeline-Tweet-text" lang="en" dir="ltr">Denali recognizes Native Alaskan Abbie Joseph during women's history month: <a href="https://t.co/VYh5JVNcHv" rel="nofollow" dir="ltr" data-expanded-url="http://www.nps.gov/articles/akwomen-abbie-joseph.htm" class="link customisable" target="_blank" title="http://www.nps.gov/articles/akwomen-abbie-joseph.htm" data-scribe="element:url"><span class="u-hiddenVisually">http://www.</span>nps.gov/articles/akwom<span class="u-hiddenVisually">en-abbie-joseph.htm&nbsp;</span>…</a> <a href="https://twitter.com/hashtag/findyourpark?src=hash" data-query-source="hashtag_click" class="PrettyLink hashtag customisable" dir="ltr" rel="tag" data-scribe="element:hashtag"><span class="PrettyLink-prefix">#</span><span class="PrettyLink-value">findyourpark</span></a> <a href="https://twitter.com/hashtag/denalihistory?src=hash" data-query-source="hashtag_click" class="PrettyLink hashtag customisable" dir="ltr" rel="tag" data-scribe="element:hashtag"><span class="PrettyLink-prefix">#</span><span class="PrettyLink-value">denalihistory</span></a>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="timeline-TweetList-tweet customisable-border">
+                                <div class="timeline-Tweet">
+                                    <div class="timeline-Tweet-brand u-floatRight">
+                                        <div class="Icon Icon--twitter"></div>
+                                    </div>
+                                    <div class="timeline-Tweet-author">
+                                        <div class="TweetAuthor">
+                                            <a class="TweetAuthor-link Identity u-linkBlend" href="https://twitter.com/DenaliNPS">
+                                                <span class="TweetAuthor-avatar Identity-avatar">
+                                                  <img class="Avatar" alt="" src="https://pbs.twimg.com/profile_images/625002681900208129/vjrhX5Rt_bigger.png">
+                                                </span>
+                                                <span class="TweetAuthor-name Identity-name customisable-highlight" title="Denali National Park" data-scribe="element:name">Denali National Park</span>
+                                                <span class="TweetAuthor-verifiedBadge" data-scribe="element:verified_badge"><div class="Icon Icon--verified " aria-label="Verified Account" title="Verified Account" role="img"></div><b class="u-hiddenVisually">✔</b></span>
+                                                <span class="TweetAuthor-screenName Identity-screenName" title="&lrm;@DenaliNPS" data-scribe="element:screen_name">&lrm;@DenaliNPS</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p class="timeline-Tweet-text" lang="en" dir="ltr">Denali recognizes Native Alaskan Abbie Joseph during women's history month: <a href="https://t.co/VYh5JVNcHv" rel="nofollow" dir="ltr" data-expanded-url="http://www.nps.gov/articles/akwomen-abbie-joseph.htm" class="link customisable" target="_blank" title="http://www.nps.gov/articles/akwomen-abbie-joseph.htm" data-scribe="element:url"><span class="u-hiddenVisually">http://www.</span>nps.gov/articles/akwom<span class="u-hiddenVisually">en-abbie-joseph.htm&nbsp;</span>…</a> <a href="https://twitter.com/hashtag/findyourpark?src=hash" data-query-source="hashtag_click" class="PrettyLink hashtag customisable" dir="ltr" rel="tag" data-scribe="element:hashtag"><span class="PrettyLink-prefix">#</span><span class="PrettyLink-value">findyourpark</span></a> <a href="https://twitter.com/hashtag/denalihistory?src=hash" data-query-source="hashtag_click" class="PrettyLink hashtag customisable" dir="ltr" rel="tag" data-scribe="element:hashtag"><span class="PrettyLink-prefix">#</span><span class="PrettyLink-value">denalihistory</span></a>
+                                    </p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                     <div class="cTitle">Popular in #uselection2016 </div>
+                     <div class="cTwitterWidgetContainer">
 
-								</div>
-							</li>
-							<li>
-								<div class="avatar"><img class="preserve" onerror="errorImage(this)" src="https://twitter.com/CAW622/profile_image?size=original">
-								</div>
-								<div class="bubble-container">
-									<div class="bubble">
-										<h4 class="twitter-name"><a href="#">Cheryl</a></h4>
-										<h5 class="twitter-id">@CAW622</h5>
-										<br>
-										<div class="twitter-text">Our country's youth is being hijacked by evil.  We must stop this insanity and vote #Trump2016</div>
-									</div>
-
-								</div>
-							</li>
-							<li>
-								<div class="avatar"><img class="preserve" onerror="errorImage(this)" src="https://twitter.com/CAW622/profile_image?size=original">
-								</div>
-								<div class="bubble-container">
-									<div class="bubble">
-										<h4 class="twitter-name"><a href="#">Cheryl</a></h4>
-										<h5 class="twitter-id">@CAW622</h5>
-										<br>
-										<div class="twitter-text">Our country's youth is being hijacked by evil.  We must stop this insanity and vote #Trump2016</div>
-									</div>
-
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="column">
-					<div id="feed2">
-						<h4>News Column 2</h4>
-						<ul class="timeline" id="nt-popular"><li><div class="avatar"><img class="preserve" src="https://twitter.com/realDonaldTrump/profile_image?size=original"></div> <div class="bubble-container"><div class="bubble"><div class="retweet"><div class="icon-heart"><span>9647</span></div></div><div class="retweet2"><div class="icon-retweet"><span>3755</span></div></div> <h5 class="retweet-user"><a href="#">John Jr</a> <span>ReTweeted</span></h5><h4 class="twitter-name"><a href="#">Donald J. Trump</a></h4><h5 class="twitter-id">@realDonaldTrump</h5><br><div class="twitter-text">Keep lightweight Marco and his friends out of the White House.
-						<a>#MakeAmericaGreatAgain</a> #Trump2016</div></div></div></li><li><div class="avatar"><img class="preserve" src="https://twitter.com/realDonaldTrump/profile_image?size=original"></div> <div class="bubble-container"><div class="bubble"><div class="retweet"><div class="icon-heart"><span>6835</span></div></div><div class="retweet2"><div class="icon-retweet"><span>2232</span></div></div> <h5 class="retweet-user"><a href="#">John Jr</a> <span>ReTweeted</span></h5><h4 class="twitter-name"><a href="#">Donald J. Trump</a></h4><h5 class="twitter-id">@realDonaldTrump</h5><br><div class="twitter-text">I will be interviewed in a town hall format on @FoxNews with @seanhannity at 10pmE. Enjoy!
-						#MakeAmericaGreatAgain #Trump2016</div></div></div></li><li><div class="avatar"><img class="preserve" src="https://twitter.com/realDonaldTrump/profile_image?size=original"></div> <div class="bubble-container"><div class="bubble"><div class="retweet"><div class="icon-heart"><span>6000</span></div></div><div class="retweet2"><div class="icon-retweet"><span>1801</span></div></div> <h5 class="retweet-user"><a href="#">John Jr</a> <span>ReTweeted</span></h5><h4 class="twitter-name"><a href="#">Donald J. Trump</a></h4><h5 class="twitter-id">@realDonaldTrump</h5><br><div class="twitter-text">I will be giving a lengthy interview to @andersoncooper tonight at 8pmE from Florida. Watch on @CNN! #MakeAmericaGreatAgain #Trump2016</div></div></div></li><li><div class="avatar"><img class="preserve" src="https://twitter.com/cenkuygur/profile_image?size=original"></div> <div class="bubble-container"><div class="bubble"><div class="retweet"><div class="icon-heart"><span>1530</span></div></div><div class="retweet2"><div class="icon-retweet"><span>788</span></div></div> <h5 class="retweet-user"><a href="#">Joser</a> <span>ReTweeted</span></h5><h4 class="twitter-name"><a href="#">Cenk Uygur</a></h4><h5 class="twitter-id">@cenkuygur</h5><br><div class="twitter-text">Bernie Sanders absolutely crushed tonight. That was as decisive a debate victory as I have seen in this primary. #DemDebate #FeelTheBern</div></div></div></li><li><div class="avatar"><img class="preserve" src="https://twitter.com/realDonaldTrump/profile_image?size=original"></div> <div class="bubble-container"><div class="bubble"><div class="retweet"><div class="icon-heart"><span>18811</span></div></div><div class="retweet2"><div class="icon-retweet"><span>5470</span></div></div> <h5 class="retweet-user"><a href="#">icenite</a> <span>ReTweeted</span></h5><h4 class="twitter-name"><a href="#">Donald J. Trump</a></h4><h5 class="twitter-id">@realDonaldTrump</h5><br><div class="twitter-text">Thank you Hawaii! #Trump2016</div></div></div></li></ul>
-					</div>
-				</div>
-				<div class="column">
-					<div id="feed3">
-						<h4>News Column 3</h4>
-						<ul class="timeline" id="nt-popular"><li><div class="avatar"><img class="preserve" src="https://twitter.com/realDonaldTrump/profile_image?size=original"></div> <div class="bubble-container"><div class="bubble"><div class="retweet"><div class="icon-heart"><span>9647</span></div></div><div class="retweet2"><div class="icon-retweet"><span>3755</span></div></div> <h5 class="retweet-user"><a href="#">John Jr</a> <span>ReTweeted</span></h5><h4 class="twitter-name"><a href="#">Donald J. Trump</a></h4><h5 class="twitter-id">@realDonaldTrump</h5><br><div class="twitter-text">Keep lightweight Marco and his friends out of the White House.
-							#MakeAmericaGreatAgain #Trump2016</div></div></div></li><li><div class="avatar"><img class="preserve" src="https://twitter.com/realDonaldTrump/profile_image?size=original"></div> <div class="bubble-container"><div class="bubble"><div class="retweet"><div class="icon-heart"><span>6835</span></div></div><div class="retweet2"><div class="icon-retweet"><span>2232</span></div></div> <h5 class="retweet-user"><a href="#">John Jr</a> <span>ReTweeted</span></h5><h4 class="twitter-name"><a href="#">Donald J. Trump</a></h4><h5 class="twitter-id">@realDonaldTrump</h5><br><div class="twitter-text">I will be interviewed in a town hall format on @FoxNews with @seanhannity at 10pmE. Enjoy!
-							#MakeAmericaGreatAgain #Trump2016</div></div></div></li><li><div class="avatar"><img class="preserve" src="https://twitter.com/realDonaldTrump/profile_image?size=original"></div> <div class="bubble-container"><div class="bubble"><div class="retweet"><div class="icon-heart"><span>6000</span></div></div><div class="retweet2"><div class="icon-retweet"><span>1801</span></div></div> <h5 class="retweet-user"><a href="#">John Jr</a> <span>ReTweeted</span></h5><h4 class="twitter-name"><a href="#">Donald J. Trump</a></h4><h5 class="twitter-id">@realDonaldTrump</h5><br><div class="twitter-text">I will be giving a lengthy interview to @andersoncooper tonight at 8pmE from Florida. Watch on @CNN! #MakeAmericaGreatAgain #Trump2016</div></div></div></li><li><div class="avatar"><img class="preserve" src="https://twitter.com/cenkuygur/profile_image?size=original"></div> <div class="bubble-container"><div class="bubble"><div class="retweet"><div class="icon-heart"><span>1530</span></div></div><div class="retweet2"><div class="icon-retweet"><span>788</span></div></div> <h5 class="retweet-user"><a href="#">Joser</a> <span>ReTweeted</span></h5><h4 class="twitter-name"><a href="#">Cenk Uygur</a></h4><h5 class="twitter-id">@cenkuygur</h5><br><div class="twitter-text">Bernie Sanders absolutely crushed tonight. That was as decisive a debate victory as I have seen in this primary. #DemDebate #FeelTheBern</div></div></div></li><li><div class="avatar"><img class="preserve" src="https://twitter.com/realDonaldTrump/profile_image?size=original"></div> <div class="bubble-container"><div class="bubble"><div class="retweet"><div class="icon-heart"><span>18811</span></div></div><div class="retweet2"><div class="icon-retweet"><span>5470</span></div></div> <h5 class="retweet-user"><a href="#">icenite</a> <span>ReTweeted</span></h5><h4 class="twitter-name"><a href="#">Donald J. Trump</a></h4><h5 class="twitter-id">@realDonaldTrump</h5><br><div class="twitter-text">Thank you Hawaii! #Trump2016</div></div></div></li></ul>
-					</div>
-				</div>
-			</section>
-			<section class="section1 col-2 ss-style-boxes">
-				<h2 class="main-h2">Who vs Who</h2>
-				<p>Galaxies a still more of intelligence preserve and cherish that pale blue dot muse about, globular star cluster ship of the imagination shores of the cosmic ocean, as a patch of light? Ship of the imagination</p>
-				<div class="column">
-					<div id="feed8" class="wordcloud-left">
-						<div class="avatar"><img class="preserve" onerror="errorImage(this)" src="https://twitter.com/CAW622/profile_image?size=original"></div>
-						<div id="wc-container1">
-							asdasdasd sadasdasasdasdasd sadasdasasdasdasd sadasdasasdasdasd sadasdasasdasdasd sadasdasasdasdasd sadasdasasdasdasd sadasdasasdasdasd sadasdasasdasdasd sadasdas
-							asdasdasd sadasdasasdasdasd sadasdasasdasdasd sadasdas
-							asdasdasd sadasdasasdasdasd sadasdas
-						</div>
-					</div>
-				</div>
-				<div class="column">
-					<div id="feed9" class="wordcloud-right">
-						<div class="avatar"><img class="preserve" onerror="errorImage(this)" src="https://twitter.com/CAW622/profile_image?size=original"></div>
-						<div id="wc-container2">
-							asdasdasd sadasdasasdasdasd sadasdasasdasdasd sadasdasasdasdasd sadasdasasdasdasd sadasdasasdasdasd sadasdasasdasdasd sadasdasasdasdasd sadasdasasdasdasd sadasdas
-							asdasdasd sadasdasasdasdasd sadasdasasdasdasd sadasdas
-							asdasdasd sadasdasasdasdasd sadasdas
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="section2 col-2">
-				<h2 class="main-h2">Community</h2>
-				<p>Globular star cluster ship of the imagination shores of the cosmic ocean, as a patch of light? Ship of the imagination, with pretty stories for which there's little good evidence across the centuries, brain is the seed of intelligence muse about, Vangelis hydrogen atoms?</p>
-				<div class="column">
-					<div id="feed4">
-						<h4>Twitter Community graph</h4>
-						<div id="graph">...</div>
-					</div>
-				</div>
-				<div class="column">
-					<div id="feed5">
-						<h4>Popular news</h4>
-						<ul class="timeline" id="nt-latest">
-							<li>
-								<div class="avatar">
-									<img class="preserve" onerror="errorImage(this)" src="https://twitter.com/Right2Refuse/profile_image?size=original">
-								</div>
-								<div class="bubble-container">
-									<div class="bubble">
-										<h4 class="twitter-name"><a href="#">Right2Refuse</a></h4>
-										<h5 class="twitter-id">@Right2Refuse</h5>
-										<br>
-										<div class="twitter-text">#HillaryClinton Spars w/Benghazi Victim’s Families During Latest #DemDebate...</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="avatar"><img class="preserve" onerror="errorImage(this)" src="https://twitter.com/CAW622/profile_image?size=original">
-								</div>
-								<div class="bubble-container">
-									<div class="bubble">
-										<h4 class="twitter-name"><a href="#">Cheryl</a></h4>
-										<h5 class="twitter-id">@CAW622</h5>
-										<br>
-										<div class="twitter-text">Our country's youth is being hijacked by evil.  We must stop this insanity and vote #Trump2016</div>
-									</div>
-
-								</div>
-							</li>
-							<li>
-								<div class="avatar"><img class="preserve" onerror="errorImage(this)" src="https://twitter.com/CAW622/profile_image?size=original">
-								</div>
-								<div class="bubble-container">
-									<div class="bubble">
-										<h4 class="twitter-name"><a href="#">Cheryl</a></h4>
-										<h5 class="twitter-id">@CAW622</h5>
-										<br>
-										<div class="twitter-text">Our country's youth is being hijacked by evil.  We must stop this insanity and vote #Trump2016</div>
-									</div>
-
-								</div>
-							</li>
-							<li>
-								<div class="avatar"><img class="preserve" onerror="errorImage(this)" src="https://twitter.com/CAW622/profile_image?size=original">
-								</div>
-								<div class="bubble-container">
-									<div class="bubble">
-										<h4 class="twitter-name"><a href="#">Cheryl</a></h4>
-										<h5 class="twitter-id">@CAW622</h5>
-										<br>
-										<div class="twitter-text">Our country's youth is being hijacked by evil.  We must stop this insanity and vote #Trump2016</div>
-									</div>
-
-								</div>
-							</li>
-							<li>
-								<div class="avatar"><img class="preserve" onerror="errorImage(this)" src="https://twitter.com/CAW622/profile_image?size=original">
-								</div>
-								<div class="bubble-container">
-									<div class="bubble">
-										<h4 class="twitter-name"><a href="#">Cheryl</a></h4>
-										<h5 class="twitter-id">@CAW622</h5>
-										<br>
-										<div class="twitter-text">Our country's youth is being hijacked by evil.  We must stop this insanity and vote #Trump2016</div>
-									</div>
-
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="space"></div>
-			</section>
-			<section class="section3 col-2 ss-style-doublediagonal">
-				<h2 class="main-h2">Google Data</h2>
-				<p>Intelligence realm of the galaxies Apollonius of Perga rogue intelligent beings preserve and cherish that pale blue dot muse about, globular star cluster ship of the imagination shores of the cosmic ocean, as a patch of light? Ship of the imagination, with pretty stories for which there's little good evidence across the centuries, brain is the seed of intelligence muse about, Vangelis hydrogen atoms?</p>
-				<div class="column">
-					<div id="feed6">
-						<h4>Sentiment</h4>
-						<div id="graph2">...</div>
-					</div>
-				</div>
-				<div class="column">
-					<div id="feed7">
-						<h4>News</h4>
-						<div id="graph3">...</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="related">
-				<p class="pb">Powered By:</p>
-				<p>
-					<a href="#ceplink">WSO2 CEP</a>
-					<a href="#daslink">WSO2 DAS</a>
-				</p>
-			</section>
-		</div><!-- /container -->
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
-		<script src="js/modernizr.custom.js"></script>
-		<script src="js/truncate.js"></script>
-		<script src="js/jquery.waypoints.min.js"></script>
-		<script>
-			$('.twitter-text').truncate({
-				maxLines: 1,
-				lineHeight: 40,
-				tooltip:true,
-				showText: 'Read More'
-			});
-
-		  	var waypoints = $('.main-h2').waypoint({
-				handler: function(direction) {
-			    	var prev = this.previous();
-			      	var next = this.previous();
-			      	var current = $(this.element);
-
-			      	if('down' == direction){
-			      		$('.active-component').remove();
-			      		current.clone().css('background-color',current.parent().css('background-color')).addClass('active-component').appendTo($(this.element).parent());
-			      	}else if('up' == direction && prev != null){
-			      		$('.active-component').remove();
-			      		$(prev.element).clone().css('background-color',$(prev.element).parent().css('background-color')).addClass('active-component').appendTo($(prev.element).parent())
-			      	}else if( prev == null){
-			      		$('.active-component').remove();
-			      	}
-			  	}
-		  	});
-		</script>
-	</body>
+                     </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="cTitle">Popular from candidates</div>
+                   <div class="cTwitterWidgetContainer">Tiwtter feed</div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row cRedSection">
+            <div class="container">
+                <div class="col-sm-12 col-md-4">
+                    <h2>What the <br/>Community Says</h2>
+                    <p>What does each candidate's community talks about? Following word clouds shows most used words in each community. </p>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <h2>Mapping Twitter <br/>Interaction</h2>
+                    <p>Supporter numbers aren’t everything. There’s a complex geography to how Twitter communities interact, especially around an election. In the following community graph, each node is a tweep and each link is interactions (e.g. retweets). Here, the larger nodes represent accounts getting lots of attention - lots of likes, lots of retweets. Their color defines who they vote for, or at least who they tweet about the most. </p>
+                    <p>People share lot of links via retweets. On the right hand panel are the links being shared most around by this community. </p>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <h2>Media <br/>Sentiment</h2>
+                    <p>Historically, the media has shaped how people think - and, conversely, turned out to be a good indicator of public opinion. We tap into Google News to find the most relevant news articles, analyze the sentiment therein, and map it. Left hand side shows how sentiments changed over time and on the right are the articles we’re looking at right now. </p>
+                </div>
+            </div>            
+        </div>
+    </body>
 </html>
